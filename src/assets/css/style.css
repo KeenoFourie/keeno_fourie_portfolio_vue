@@ -38,3 +38,21 @@
     background-size: cover;
     height: 100vh;
 }
+#footer_styling {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+}
+#linked_socials {
+    padding: 1rem;
+}
+#line_horizontal {
+    border: 1px solid white;
+    margin: 1rem 20rem 1rem;
+}
+#copyright {
+    color: white;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}

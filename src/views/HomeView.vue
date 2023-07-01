@@ -1,17 +1,18 @@
 <template>
   <div id="home_background">
-    <HomeContent/>
+    <HomeComp/>
   </div>
 </template>
 
 <script>
-import HomeContent from '@/components/HomeComp.vue'
+import HomeComp from '@/components/HomeComp.vue'
     export default {
         components: {
-          HomeContent
+          HomeComp
         }
     }
 </script>
+
 
 <style scoped>
 

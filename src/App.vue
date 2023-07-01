@@ -2,15 +2,18 @@
   <NavBar/>
   <Logo/>
   <router-view/>
+  <Footer/>
 </template>
 
 <script>
 import NavBar from '@/components/NavBar.vue'
 import Logo from '@/components/LogoComp.vue'
+import Footer from '@/components/FooterComp.vue'
     export default {
         components: {
           NavBar,
-          Logo
+          Logo,
+          Footer
         }
     }
 </script>
