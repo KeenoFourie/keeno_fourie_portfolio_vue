@@ -1,3 +1,11 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #navbar_styling {
     position: fixed;
     top: 43vh;
@@ -9,4 +17,24 @@
     left: 5vh;
     border: 2px solid black;
     border-top: none;
+}
+#text_styling_home_1, #text_styling_home_2 {
+    font-weight: bolder;
+    color: white;
+    margin-top: 2rem;
+}
+#text_styling_home_1 {
+    font-size: 3rem;
+}
+#text_styling_home_2 {
+    font-size: 1.5rem;
+}
+#text_content {
+    padding: 35vh;
+}
+#home_background {
+    background-image: url("https://i.postimg.cc/SR06DLsV/peakpx-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }

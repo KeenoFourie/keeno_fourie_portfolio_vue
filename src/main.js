@@ -7,6 +7,9 @@ import store from './store'
 // css
 import '@/assets/css/style.css'
 
+// bootstrap icons
+import 'bootstrap-icons/font/bootstrap-icons'
+
 // bootstrap
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
