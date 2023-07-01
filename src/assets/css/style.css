@@ -1,0 +1,9 @@
+#navbar_styling {
+    position: fixed;
+    top: 43vh;
+    right: 0vh;
+}
+#logo_styling {
+    height: 5rem;
+}
+/*<img id="logo_styling" src="https://i.postimg.cc/Nf75cnvc/Etsy-Item-Listing-Photo.png" alt="Logo" loading="lazy"> */
