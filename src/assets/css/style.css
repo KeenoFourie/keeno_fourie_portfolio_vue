@@ -28,6 +28,7 @@
 }
 #text_styling_home_2 {
     font-size: 1.5rem;
+    margin-bottom: 3rem;
 }
 #text_content {
     padding: 35vh;
@@ -55,4 +56,26 @@
     color: white;
     margin-top: 0.5rem;
     margin-bottom: 0;
+}
+nav {
+    padding: 30px;
+}
+nav a {
+    font-weight: bold;
+    color: grey;
+    text-decoration: none;
+    font-size: large;
+}
+nav a.router-link-exact-active {
+    color: black;
+}
+#link_from_home_to_about {
+    border: 2px solid white;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+}
+#link_from_home_to_about:hover {
+    color: black;
+    background-color: white;
 }
