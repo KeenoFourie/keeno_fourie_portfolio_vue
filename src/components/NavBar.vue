@@ -14,7 +14,7 @@
                   <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body">
+                <div class="offcanvas-body" id="nav_menu_styling">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
                       <router-link to="/home">HOME</router-link>
@@ -49,7 +49,5 @@
 </script>
 
 <style scoped>
-#logo_styling {
-    height: 5rem;
-}
+
 </style>
