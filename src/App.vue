@@ -1,13 +1,16 @@
 <template>
   <NavBar/>
+  <Logo/>
   <router-view/>
 </template>
 
 <script>
 import NavBar from '@/components/NavBar.vue'
+import Logo from '@/components/LogoComp.vue'
     export default {
         components: {
-          NavBar
+          NavBar,
+          Logo
         }
     }
 </script>
