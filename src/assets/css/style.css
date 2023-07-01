@@ -5,5 +5,8 @@
 }
 #logo_styling {
     height: 5rem;
+    position: fixed;
+    left: 5vh;
+    border: 2px solid black;
+    border-top: none;
 }
-/*<img id="logo_styling" src="https://i.postimg.cc/Nf75cnvc/Etsy-Item-Listing-Photo.png" alt="Logo" loading="lazy"> */
