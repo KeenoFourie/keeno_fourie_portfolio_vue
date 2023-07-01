@@ -1,14 +1,18 @@
 <template>
-  <div>
-
+  <div id="home_background">
+    <AboutComp/>
   </div>
 </template>
 
 <script>
-  export default {
-    
-  }
+import AboutComp from '@/components/AboutComp.vue'
+    export default {
+        components: {
+          AboutComp
+        }
+    }
 </script>
+
 
 <style scoped>
 
