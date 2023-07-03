@@ -26,4 +26,7 @@ import Footer from '@/components/FooterComp.vue'
   text-align: center;
   color: #2c3e50;
 }
+#navbar_styling {
+  z-index: 100;
+}
 </style>
