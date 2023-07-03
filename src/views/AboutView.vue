@@ -1,5 +1,5 @@
 <template>
-  <div id="home_background">
+  <div id="about_background">
     <AboutComp/>
   </div>
 </template>

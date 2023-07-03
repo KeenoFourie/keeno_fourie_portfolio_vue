@@ -78,6 +78,17 @@ nav a.router-link-exact-active {
 #link_from_home_to_about:hover {
     color: black;
     background-color: white;
+    animation: none;
+}
+#link_from_home_to_about {
+    animation-name: home-animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes home-animation {
+    0%{color: white;}
+    75%{color: transparent;}
 }
 #about_page {
     padding-top: 15vh;
@@ -87,8 +98,84 @@ nav a.router-link-exact-active {
 }
 #heading_about_me {
     font-size: xx-large;
+    font-weight: bold;
 }
 #about_me_paragraph {
     border-radius: 0.3rem;
     padding: 0.3rem;
+}
+#about_background {
+    background-image: url("https://i.postimg.cc/FRDWz4Nq/wallpaperflare-com-wallpaper-8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#heading_about_me {
+    animation-name: about-animation;
+    animation-duration: 6s;
+    animation-delay: -2s;
+}
+
+@keyframes about-animation {
+    0%{margin-top: 400px;}
+}
+
+.paragraph_on_about_1 {
+    animation-name: paragraphs_movement_1;
+    animation-duration: 6s;
+    animation-delay: -2s;
+}
+@keyframes paragraphs_movement_1 {
+    0%{margin-left: 400px;}
+}
+.paragraph_on_about_2 {
+    animation-name: paragraphs_movement_2;
+    animation-duration: 6s;
+    animation-delay: -2s;
+}
+@keyframes paragraphs_movement_2 {
+    0%{margin-right: 400px;}
+}
+.paragraph_on_about_3 {
+    animation-name: paragraphs_movement_3;
+    animation-duration: 6s;
+    animation-delay: -2s;
+}
+@keyframes paragraphs_movement_3 {
+    0%{margin-left: 400px;}
+}
+.paragraph_on_about_4 {
+    animation-name: paragraphs_movement_4;
+    animation-duration: 6s;
+    animation-delay: -2s;
+}
+@keyframes paragraphs_movement_4 {
+    0%{margin-right: 400px;}
+}
+.paragraph_on_about_5 {
+    animation-name: paragraphs_movement_5;
+    animation-duration: 6s;
+    animation-delay: -2s;
+}
+@keyframes paragraphs_movement_5 {
+    0%{margin-left: 400px;}
+}
+.paragraph_on_about_6 {
+    animation-name: paragraphs_movement_6;
+    animation-duration: 6s;
+    animation-delay: -2s;
+}
+@keyframes paragraphs_movement_6 {
+    0%{margin-right: 400px;}
+}
+#link_from_about_to_resume {
+    border: 2px solid white;
+    color: white;
+    padding: 0.3rem;
+    padding-bottom: 0.6rem;
+}
+#link_from_about_to_resume:hover {
+    background-color: white;
+    color: black;
 }
