@@ -274,11 +274,56 @@ nav a.router-link-exact-active {
     animation-duration: 3s;
     animation-delay: -2s;
 }
-
-
-
-
-
+#contact_background {
+    background-image: url("https://i.postimg.cc/sxf5fyFL/wallpaperflare-com-wallpaper-9.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+#contact_content {
+    display: flex;
+}
+#everything_in_contact {
+    color: white;
+    padding-top: 30vh;
+    width: 100%;
+}
+input {
+    width: 20rem;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid white;
+}
+::placeholder {
+    color: rgba(255, 255, 255, 0.181);
+}
+#submit_button {
+    border: 2px solid white;
+    border-radius: 0;
+    color: white;
+}
+#submit_button:hover {
+    background-color: white;
+    color: black;
+}
+label {
+    margin-right: 1rem;
+}
+form {
+    border: 2px solid white;
+    padding: 2rem;
+    margin-left: 4rem;
+}
+#contact_details {
+    margin-top: 5rem;
+    border: 2px solid white;
+    height: 9rem;
+    padding-top: 1rem;
+}
+#contact_details:hover {
+    background-color: white;
+    color: black;
+}
 /* #my_details:hover, #the_headings:hover, #my_passions:hover, #my_soft_skills:hover, #my_technical_skills:hover, #my_education:hover, #my_work_experience:hover {
     background-color: white;
     color: black;

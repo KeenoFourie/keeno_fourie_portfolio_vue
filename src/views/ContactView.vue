@@ -1,15 +1,19 @@
 <template>
-    <div>
-
+    <div id="contact_background">
+      <ContactComp/>
     </div>
-</template>
-
-<script>
-    export default {
-        
-    }
-</script>
-
-<style scoped>
-
-</style>
+  </template>
+  
+  <script>
+  import ContactComp from '@/components/ContactComp.vue'
+      export default {
+          components: {
+            ContactComp
+          }
+      }
+  </script>
+  
+  
+  <style scoped>
+  
+  </style>
