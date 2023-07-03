@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+
 #navbar_styling {
     position: fixed;
     top: 43vh;
@@ -179,3 +180,106 @@ nav a.router-link-exact-active {
     background-color: white;
     color: black;
 }
+#resume_background {
+    background-image: url("https://i.postimg.cc/P5LCWTG1/wallpaperflare-com-wallpaper-7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+#the_headings {
+    font-size: xx-large;
+    text-decoration: underline;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+#my_details {
+    color: white;
+    border: 2px solid white;
+    width: 25rem;
+    position: fixed;
+    top: 6rem;
+    left: 2rem;
+    animation-name: content_resume;
+    animation-duration: 3s;
+    animation-delay: -2s;
+}
+@keyframes content_resume {
+    0%{border-color: white;}
+    75%{border-color: transparent;}
+}
+#my_passions {
+    color: white;
+    border: 2px solid white;
+    width: 40rem;
+    position: fixed;
+    top: 6rem;
+    left: 29rem;
+    animation-name: content_resume;
+    animation-duration: 3s;
+    animation-delay: -2s;
+}
+#my_soft_skills {
+    color: white;
+    border: 2px solid white;
+    height: 12.7rem;
+    width: 18rem;
+    position: fixed;
+    top: 6rem;
+    left: 71rem;
+    animation-name: content_resume;
+    animation-duration: 3s;
+    animation-delay: -2s;
+}
+#my_technical_skills {
+    color: white;
+    border: 2px solid white;
+    width: 32rem;
+    height: 20rem;
+    position: fixed;
+    top: 21.4rem;
+    left: 29rem;
+    padding: 2rem;
+    animation-name: content_resume;
+    animation-duration: 3s;
+    animation-delay: -2s;
+}
+#tech {
+    display: flex;
+    justify-content: space-evenly;
+}
+#my_education {
+    color: white;
+    border: 2px solid white;
+    width: 25rem;
+    height: 20.1rem;
+    position: fixed;
+    bottom: 6rem;
+    right: 7rem;
+    padding-top: 4rem;
+    animation-name: content_resume;
+    animation-duration: 3s;
+    animation-delay: -2s;
+}
+#my_work_experience {
+    color: white;
+    border: 2px solid white;
+    width: 25rem;
+    height: 11.1rem;
+    position: fixed;
+    bottom: 6rem;
+    left: 2rem;
+    padding-top: 2rem;
+    animation-name: content_resume;
+    animation-duration: 3s;
+    animation-delay: -2s;
+}
+
+
+
+
+
+/* #my_details:hover, #the_headings:hover, #my_passions:hover, #my_soft_skills:hover, #my_technical_skills:hover, #my_education:hover, #my_work_experience:hover {
+    background-color: white;
+    color: black;
+} */

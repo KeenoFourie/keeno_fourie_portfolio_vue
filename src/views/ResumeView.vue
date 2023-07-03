@@ -1,15 +1,19 @@
 <template>
-    <div>
-
+    <div id="resume_background">
+      <ResumeComp/>
     </div>
-</template>
-
-<script>
-    export default {
-        
-    }
-</script>
-
-<style scoped>
-
-</style>
+  </template>
+  
+  <script>
+  import ResumeComp from '@/components/ResumeComp.vue'
+      export default {
+          components: {
+            ResumeComp
+          }
+      }
+  </script>
+  
+  
+  <style scoped>
+  
+  </style>
