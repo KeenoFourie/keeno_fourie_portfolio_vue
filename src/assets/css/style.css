@@ -354,7 +354,13 @@ form {
     margin: 1rem;
     margin-top: 0;
 }
+
+@keyframes testimonials {
+    0%{margin-right: 800px;}
+}
 #testimonial_position_styling {
+    animation-name: testimonials;
+    animation-duration: 3s;
     column-count: 3;
     padding-left: 8rem;
     padding-top: 3rem;
@@ -377,3 +383,54 @@ form {
 #testimonial_name {
     font-weight: bolder;
 }
+
+
+
+#projects_background {
+    background-image: url("https://i.postimg.cc/MZ3tbd6N/wallpaperflare-com-wallpaper-11.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+#projects_card_styling {
+    width: 20rem;
+    margin: 4rem;
+    margin-top: 0;
+    border: 2px solid white;
+    animation-name: project;
+    animation-duration: 3s;
+    animation-delay: -2s;
+}
+@keyframes project {
+    0%{margin-right: 800px;}
+}
+#projects_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 8rem;
+}
+#links_display {
+    opacity: 0;
+    padding-top: 2rem;
+}
+#links_display:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.829);
+}
+#button_projects_styling {
+    border: 2px solid white;
+    color: white;
+    margin: 0.3rem;
+    padding: 0.3rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+#button_projects_styling:hover {
+    background-color: white;
+    color: black;
+}
+
+
+

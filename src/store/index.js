@@ -11,7 +11,9 @@ export default createStore({
     soft_skills: null,
     technical_skills: null,
     // testimonials
-    testimonials: null
+    testimonials: null,
+    // projects
+    projects: null
   },
   getters: {
   },
@@ -38,6 +40,10 @@ export default createStore({
     // testimonials
     setTestimonials(state, testimonials) {
       state.testimonials = testimonials
+    },
+    // projects
+    setProjects(state, projects) {
+      state.projects = projects
     }
   },
   actions: {
@@ -104,6 +110,16 @@ export default createStore({
       let res = await fetch(dataUrl)
       let {testimonials} = await res.json()
       context.commit('setTestimonials', testimonials)
+    } catch (e) {
+      console.log(e.message);
+    }
+},
+  // projects
+  async fetchProjects(context) { 
+    try {
+      let res = await fetch(dataUrl)
+      let {projects} = await res.json()
+      context.commit('setProjects', projects)
     } catch (e) {
       console.log(e.message);
     }
