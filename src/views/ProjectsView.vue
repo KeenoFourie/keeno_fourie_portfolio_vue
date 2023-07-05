@@ -1,15 +1,19 @@
 <template>
-    <div>
-
+    <div id="projects_background">
+      <ProjectsComp/>
     </div>
-</template>
-
-<script>
-    export default {
-        
-    }
-</script>
-
-<style scoped>
-
-</style>
+  </template>
+  
+  <script>
+  import ProjectsComp from '@/components/ProjectsComp.vue'
+      export default {
+          components: {
+            ProjectsComp
+          }
+      }
+  </script>
+  
+  
+  <style scoped>
+  
+  </style>
