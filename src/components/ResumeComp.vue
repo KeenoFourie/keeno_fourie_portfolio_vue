@@ -1,6 +1,6 @@
 <template>
-    <div>
-          <div id="my_details" v-for="detail in details" :key="detail.id">
+    <div id="resume_page_styling">
+          <div id="my_details" v-for="detail in details" :key="detail.id" class="card_styling">
             <p id="the_headings">DETAILS:</p>
               <p>Name: {{ detail.name }}</p>
               <p>Date of Birth: {{ detail.date_of_birth }}</p>
@@ -8,38 +8,38 @@
               <p>Location: {{ detail.location }}</p>
               <p>Cellphone Number: {{ detail.cellphone_number }}</p>
               <p>Email Address: {{ detail.email_address }}</p>
-              <p>Willing to Relocate: {{ detail.willing_to_relocate }}</p>
-            </div>
+                </div>
 
-          <div id="my_passions" v-for="passion in passions" :key="passion.id">
+          <div id="my_passions" v-for="passion in passions" :key="passion.id" class="card_styling">
             <p id="the_headings">PASSIONS:</p>
               <p>{{ passion.passion_content }}</p>
             </div>
 
-          <div id="my_soft_skills" v-for="soft_skill in soft_skills" :key="soft_skill.id">
+          <div id="my_soft_skills" v-for="soft_skill in soft_skills" :key="soft_skill.id" class="card_styling">
             <p id="the_headings">SOFT SKILLS:</p>
               <p>{{ soft_skill.soft_skills_content }}</p>
             </div>
 
-            <div id="my_technical_skills">
-                <p id="the_headings">TECHNICAL SKILLS:</p>
-                <div id="tech" v-for="technical_skill in technical_skills" :key="technical_skill.id">
-                    <p class="col-3">{{ technical_skill.content }}</p>
-                    <p class="col-3"><i :class="technical_skill.content_icons"></i></p>
-                    <p class="col-3">{{ technical_skill.content_progress }}</p>
-                </div>
-            </div>
-
-            <div id="my_education" v-for="education in education" :key="education.id">
+            
+            <div id="my_education" v-for="education in education" :key="education.id" class="card_styling">
                 <p id="the_headings">EDUCATION:</p>
                 <p>Primary School: {{ education.primary_school }}</p>
                 <p>High School: {{ education.high_school }}</p>
                 <p>Currently: {{ education.currently }}</p>
             </div>
             
-            <div id="my_work_experience" v-for="work_experience in work_experience" :key="work_experience.id">
+            <div id="my_work_experience" v-for="work_experience in work_experience" :key="work_experience.id" class="card_styling">
                 <p id="the_headings">WORK EXPERIENCE:</p>
                 <p>{{ work_experience.work }}</p>
+            </div>
+            
+            <div id="my_technical_skills">
+                <p id="the_headings">TECHNICAL SKILLS:</p>
+                <div id="tech" v-for="technical_skill in technical_skills" :key="technical_skill.id" class="card_styling">
+                    <p class="col-3">{{ technical_skill.content }}</p>
+                    <p class="col-3"><i :class="technical_skill.content_icons"></i></p>
+                    <p class="col-3">{{ technical_skill.content_progress }}</p>
+                </div>
             </div>
       </div>
 </template>

@@ -170,6 +170,20 @@ nav a.router-link-exact-active {
 @keyframes paragraphs_movement_6 {
     0%{margin-right: 400px;}
 }
+
+
+
+
+
+
+#resume_page_styling {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 5rem;
+    align-items: center;
+    margin: auto;
+}
 #link_from_about_to_resume {
     border: 2px solid white;
     color: white;
@@ -193,28 +207,29 @@ nav a.router-link-exact-active {
     display: flex;
     justify-content: space-around;
 }
+@keyframes content_resume {
+    0%{margin-right: 800px;}
+}
 #my_details {
     color: white;
     border: 2px solid white;
     width: 25rem;
-    position: fixed;
+    height: min-content;
+    /* position: fixed;
     top: 6rem;
-    left: 2rem;
+    left: 2rem; */
     animation-name: content_resume;
     animation-duration: 3s;
     animation-delay: -2s;
-}
-@keyframes content_resume {
-    0%{border-color: white;}
-    75%{border-color: transparent;}
 }
 #my_passions {
     color: white;
     border: 2px solid white;
     width: 40rem;
-    position: fixed;
+    height: min-content;
+    /* position: fixed;
     top: 6rem;
-    left: 29rem;
+    left: 29rem; */
     animation-name: content_resume;
     animation-duration: 3s;
     animation-delay: -2s;
@@ -222,11 +237,11 @@ nav a.router-link-exact-active {
 #my_soft_skills {
     color: white;
     border: 2px solid white;
-    height: 12.7rem;
+    height: min-content;
     width: 18rem;
-    position: fixed;
+    /* position: fixed;
     top: 6rem;
-    left: 71rem;
+    left: 71rem; */
     animation-name: content_resume;
     animation-duration: 3s;
     animation-delay: -2s;
@@ -235,11 +250,10 @@ nav a.router-link-exact-active {
     color: white;
     border: 2px solid white;
     width: 32rem;
-    height: 20rem;
-    position: fixed;
+    height: min-content;
+    /* position: fixed;
     top: 21.4rem;
-    left: 29rem;
-    padding: 2rem;
+    left: 29rem; */
     animation-name: content_resume;
     animation-duration: 3s;
     animation-delay: -2s;
@@ -252,11 +266,10 @@ nav a.router-link-exact-active {
     color: white;
     border: 2px solid white;
     width: 25rem;
-    height: 20.1rem;
-    position: fixed;
+    height: min-content;
+    /* position: fixed;
     bottom: 6rem;
-    right: 7rem;
-    padding-top: 4rem;
+    right: 7rem; */
     animation-name: content_resume;
     animation-duration: 3s;
     animation-delay: -2s;
@@ -265,11 +278,10 @@ nav a.router-link-exact-active {
     color: white;
     border: 2px solid white;
     width: 25rem;
-    height: 11.1rem;
-    position: fixed;
+    height: min-content;
+    /* position: fixed;
     bottom: 6rem;
-    left: 2rem;
-    padding-top: 2rem;
+    left: 2rem; */
     animation-name: content_resume;
     animation-duration: 3s;
     animation-delay: -2s;
