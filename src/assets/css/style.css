@@ -340,3 +340,40 @@ form {
     background-color: white;
     color: black;
 } */
+
+
+#testimonials_background {
+    background-image: url("https://i.postimg.cc/qvNkLPD9/wallpaperflare-com-wallpaper-10.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+#testimonials_styling {
+    width: 18.5rem;
+    border: none;
+    margin: 1rem;
+    margin-top: 0;
+}
+#testimonial_position_styling {
+    column-count: 3;
+    padding-left: 8rem;
+    padding-top: 3rem;
+}
+#displaying_words_testimonial {
+    overflow: hidden;
+    opacity: 0;
+    border: 2px solid white;
+}
+#displaying_words_testimonial:hover {
+    opacity: 1;
+    transform: translateY(0);
+    background-color: rgba(0, 0, 0, 0.682);
+    padding-top: 1rem;
+}
+#edit_testimonial_image {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+#testimonial_name {
+    font-weight: bolder;
+}

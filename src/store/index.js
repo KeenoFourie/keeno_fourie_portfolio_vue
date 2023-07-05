@@ -5,14 +5,18 @@ const dataUrl = "https://keenofourie.github.io/Vue_Project_JSON_Server/index.jso
 
 export default createStore({
   state: {
+    // resume
     details: null,
     passions: null,
     soft_skills: null,
-    technical_skills: null
+    technical_skills: null,
+    // testimonials
+    testimonials: null
   },
   getters: {
   },
   mutations: {
+    // resume
     setDetails(state, details) {
       state.details = details
     },
@@ -30,9 +34,14 @@ export default createStore({
     },
     setWorkExperience(state, work_experience) {
       state.work_experience = work_experience
+    },
+    // testimonials
+    setTestimonials(state, testimonials) {
+      state.testimonials = testimonials
     }
   },
   actions: {
+    // resume
     async fetchDetails(context) {
       try {
         let res = await fetch(dataUrl)
@@ -88,7 +97,17 @@ export default createStore({
       } catch (e) {
         console.log(e.message);
       }
-  }
+  },
+  // testimonials
+  async fetchTestimonials(context) { 
+    try {
+      let res = await fetch(dataUrl)
+      let {testimonials} = await res.json()
+      context.commit('setTestimonials', testimonials)
+    } catch (e) {
+      console.log(e.message);
+    }
+}
 },
   modules: {
   }
