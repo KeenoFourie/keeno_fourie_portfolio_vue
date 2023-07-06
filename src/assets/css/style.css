@@ -5,8 +5,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+#app{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto minmax(83.5vh, 1fr) auto;
+}
+#app>*{
+    grid-column: 1/-1;
+}
 
-
+/* navbar */
 #navbar_styling {
     position: fixed;
     top: 43vh;
@@ -32,31 +40,7 @@
     margin-bottom: 3rem;
 }
 #text_content {
-    padding: 35vh;
-}
-#home_background {
-    background-image: url("https://i.postimg.cc/SR06DLsV/peakpx-2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
-#footer_styling {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 1rem;
-}
-#linked_socials {
-    padding: 1rem;
-}
-#line_horizontal {
-    border: 1px solid white;
-    margin: 1rem 20rem 1rem;
-}
-#copyright {
-    color: white;
-    margin-top: 0.5rem;
-    margin-bottom: 0;
+    padding-top: 35vh;
 }
 nav {
     padding: 30px;
@@ -70,31 +54,62 @@ nav a {
 nav a.router-link-exact-active {
     color: black;
 }
+
+
+
+/* footer */
+#footer_styling {
+    position: relative;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+#empty_space {
+    display: contents;
+}
+#linked_socials {
+    padding: 1rem;
+}
+#line_horizontal {
+    border: 1px solid white;
+    margin: 1rem 20rem 1rem;
+}
+#copyright {
+    color: white;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+
+/* home page */
 #link_from_home_to_about {
     border: 2px solid white;
     padding: 1rem;
     text-decoration: none;
     color: white;
+    animation-name: home-animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 #link_from_home_to_about:hover {
     color: black;
     background-color: white;
     animation: none;
 }
-#link_from_home_to_about {
-    animation-name: home-animation;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
 
 @keyframes home-animation {
     0%{color: white;}
     75%{color: transparent;}
 }
+
+
+
+
+
+
+
+/* about page */
 #about_page {
-    padding-top: 15vh;
-    padding-right: 20rem;
-    padding-left: 20rem;
+    padding-top: 6rem;
     color: white;
 }
 #heading_about_me {
@@ -105,13 +120,6 @@ nav a.router-link-exact-active {
     border-radius: 0.3rem;
     padding: 0.3rem;
 }
-#about_background {
-    background-image: url("https://i.postimg.cc/FRDWz4Nq/wallpaperflare-com-wallpaper-8.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
-
 #heading_about_me {
     animation-name: about-animation;
     animation-duration: 6s;
@@ -119,7 +127,7 @@ nav a.router-link-exact-active {
 }
 
 @keyframes about-animation {
-    0%{margin-top: 400px;}
+    0%{margin-top: 200px;}
 }
 
 .paragraph_on_about_1 {
@@ -175,7 +183,7 @@ nav a.router-link-exact-active {
 
 
 
-
+/* resume page */
 #resume_page_styling {
     display: flex;
     flex-wrap: wrap;
@@ -193,24 +201,6 @@ nav a.router-link-exact-active {
 #link_from_about_to_resume:hover {
     background-color: white;
     color: black;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-#resume_background {
-    background-image: url("https://i.postimg.cc/P5LCWTG1/wallpaperflare-com-wallpaper-7.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
 }
 #resume_page_styling {
     margin-top: 0;
@@ -294,16 +284,9 @@ nav a.router-link-exact-active {
 
 
 
-
-#contact_background {
-    background-image: url("https://i.postimg.cc/sxf5fyFL/wallpaperflare-com-wallpaper-9.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
+/* contact page */
 #heading_contact_us {
     color: white;
-    padding-top: 1rem;
 }
 #contact_content {
     display: flex;
@@ -357,29 +340,24 @@ form {
 
 
 
-
-#testimonials_background {
-    background-image: url("https://i.postimg.cc/qvNkLPD9/wallpaperflare-com-wallpaper-10.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
+/* testimonials page */
 #testimonials_styling {
-    width: 18.5rem;
+    width: 18rem;
     border: none;
     margin: 1rem;
     margin-top: 0;
 }
 
 @keyframes testimonials {
-    0%{margin-right: 800px;}
+    0%{margin-right: 200px;}
 }
 #testimonial_position_styling {
     animation-name: testimonials;
     animation-duration: 3s;
-    column-count: 3;
-    padding-left: 8rem;
-    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 #displaying_words_testimonial {
     overflow: hidden;
@@ -398,30 +376,31 @@ form {
 }
 #testimonial_name {
     font-weight: bolder;
+    padding-top: 1rem;
 }
 
 
 
 
 
-
-#projects_background {
-    background-image: url("https://i.postimg.cc/MZ3tbd6N/wallpaperflare-com-wallpaper-11.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
+/* projects page */
 #projects_card_styling {
     width: 20rem;
     margin: 4rem;
     margin-top: 0;
     border: 2px solid white;
-    animation-name: project;
+    animation-name: beating;
     animation-duration: 3s;
     animation-delay: -2s;
 }
-@keyframes project {
-    0%{margin-right: 800px;}
+@keyframes beating {
+    0% {transform: scale( 2 )
+        translateX(50%)
+        translateY(50%);}
+}
+#making_project_cards_bw {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 }
 #projects_page {
     display: flex;
