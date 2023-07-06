@@ -308,6 +308,7 @@ nav a.router-link-exact-active {
 }
 #contact_content {
     display: flex;
+    margin-left: 5rem;
 }
 #everything_in_contact {
     color: white;
