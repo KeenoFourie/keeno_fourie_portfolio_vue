@@ -14,6 +14,11 @@
     grid-column: 1/-1;
 }
 
+
+
+
+
+
 /* navbar */
 #navbar_styling {
     position: fixed;
@@ -57,11 +62,13 @@ nav a.router-link-exact-active {
 
 
 
+
+
+
 /* footer */
 #footer_styling {
     position: relative;
     width: 100%;
-    padding-bottom: 1rem;
 }
 #empty_space {
     display: contents;
@@ -78,6 +85,13 @@ nav a.router-link-exact-active {
     margin-top: 0.5rem;
     margin-bottom: 0;
 }
+
+
+
+
+
+
+
 
 
 /* home page */
@@ -115,6 +129,7 @@ nav a.router-link-exact-active {
 #heading_about_me {
     font-size: xx-large;
     font-weight: bold;
+    text-decoration: underline;
 }
 #about_me_paragraph {
     border-radius: 0.3rem;
@@ -287,6 +302,9 @@ nav a.router-link-exact-active {
 /* contact page */
 #heading_contact_us {
     color: white;
+    padding-top: 1rem;
+    text-decoration: underline;
+    font-weight: bold;
 }
 #contact_content {
     display: flex;
@@ -428,4 +446,12 @@ form {
 #button_projects_styling:hover {
     background-color: white;
     color: black;
+}
+
+
+
+
+/* media queries */
+@media (width< 1100px) {
+    
 }
