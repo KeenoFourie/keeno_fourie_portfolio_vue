@@ -1,4 +1,5 @@
 <template>
+  <h3 id="heading_contact_us">CONTACT US:</h3>
     <div id="everything_in_contact">
         <div id="contact_content">
             <form class="col-5">
