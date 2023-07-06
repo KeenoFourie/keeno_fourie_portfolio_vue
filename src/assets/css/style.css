@@ -26,7 +26,7 @@
     right: 0vh;
 }
 #logo_styling {
-    height: 5rem;
+    height: 4rem;
     position: fixed;
     left: 5vh;
     border: 2px solid black;
@@ -351,6 +351,9 @@ form {
     background-color: white;
     color: black;
 }
+#contact_name {
+    text-decoration: underline;
+}
 /* #my_details:hover, #the_headings:hover, #my_passions:hover, #my_soft_skills:hover, #my_technical_skills:hover, #my_education:hover, #my_work_experience:hover {
     background-color: white;
     color: black;
@@ -452,6 +455,87 @@ form {
 
 
 /* media queries */
-@media (width< 1100px) {
-    
+@media (width< 1200px) {
+    #navbar_styling {
+        position: absolute;
+        top: 1vh;
+    }
+    #heading_contact_us {
+        padding-top: 6rem;
+    }
+    #displaying_words_testimonial {
+        margin: auto;
+        text-align: center;
+    }
+    #line_horizontal {
+        margin: 1rem 6rem 1rem;
+    }
+    #logo_styling {
+        position: absolute;
+    }
+    #links_display {
+        font-size: small;
+        margin: auto;
+        padding: 0;
+    }
+    #contact_content {
+        display: block;
+        margin: auto;
+    }
+    #everything_in_contact {
+        padding: 1rem;
+    }
+    #contact_details {
+        margin: auto;
+        padding: 0;
+        width: 85%;
+        margin-top: 1rem;
+    }
+    form {
+        margin: auto;
+        width: 85%;
+        padding: 0.5rem;
+    }
+    input {
+        width: 100%;
+    }
+    #resume_page_styling {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    .card_styling {
+        margin: auto;
+        margin-top: 1rem;
+        width: 90%;
+    }
+    #my_technical_skills {
+        margin: auto;
+        margin-top: 1rem;
+        width: 85%;
+    }
+    #my_passions {
+        width: 85%;
+    }
+    #my_work_experience {
+        width: 85%;
+    }
+    #my_education {
+        width: 85%;
+    }
+    #my_details {
+        width: 85%;
+    }
+    #about_page {
+        width: 85%;
+        margin: auto;
+    }
+    #text_content {
+        width: 85%;
+        margin: auto;
+        padding-top: 8rem;
+    }
+    #projects_page {
+        padding-top: 1rem;
+    }
 }
