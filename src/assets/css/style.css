@@ -194,11 +194,27 @@ nav a.router-link-exact-active {
     background-color: white;
     color: black;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 #resume_background {
     background-image: url("https://i.postimg.cc/P5LCWTG1/wallpaperflare-com-wallpaper-7.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+}
+#resume_page_styling {
+    margin-top: 0;
+    padding-top: 1rem;
 }
 #the_headings {
     font-size: xx-large;
@@ -227,9 +243,6 @@ nav a.router-link-exact-active {
     border: 2px solid white;
     width: 40rem;
     height: min-content;
-    /* position: fixed;
-    top: 6rem;
-    left: 29rem; */
     animation-name: content_resume;
     animation-duration: 3s;
     animation-delay: -2s;
@@ -239,9 +252,6 @@ nav a.router-link-exact-active {
     border: 2px solid white;
     height: min-content;
     width: 18rem;
-    /* position: fixed;
-    top: 6rem;
-    left: 71rem; */
     animation-name: content_resume;
     animation-duration: 3s;
     animation-delay: -2s;
@@ -251,9 +261,6 @@ nav a.router-link-exact-active {
     border: 2px solid white;
     width: 32rem;
     height: min-content;
-    /* position: fixed;
-    top: 21.4rem;
-    left: 29rem; */
     animation-name: content_resume;
     animation-duration: 3s;
     animation-delay: -2s;
@@ -267,9 +274,6 @@ nav a.router-link-exact-active {
     border: 2px solid white;
     width: 25rem;
     height: min-content;
-    /* position: fixed;
-    bottom: 6rem;
-    right: 7rem; */
     animation-name: content_resume;
     animation-duration: 3s;
     animation-delay: -2s;
@@ -279,26 +283,36 @@ nav a.router-link-exact-active {
     border: 2px solid white;
     width: 25rem;
     height: min-content;
-    /* position: fixed;
-    bottom: 6rem;
-    left: 2rem; */
     animation-name: content_resume;
     animation-duration: 3s;
     animation-delay: -2s;
 }
+
+
+
+
+
+
+
+
 #contact_background {
     background-image: url("https://i.postimg.cc/sxf5fyFL/wallpaperflare-com-wallpaper-9.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
 }
+#heading_contact_us {
+    color: white;
+    padding-top: 1rem;
+}
 #contact_content {
     display: flex;
 }
 #everything_in_contact {
     color: white;
-    padding-top: 30vh;
+    padding-top: 20vh;
     width: 100%;
+    padding-bottom: 0;
 }
 input {
     width: 20rem;
@@ -342,6 +356,8 @@ form {
 } */
 
 
+
+
 #testimonials_background {
     background-image: url("https://i.postimg.cc/qvNkLPD9/wallpaperflare-com-wallpaper-10.jpg");
     background-repeat: no-repeat;
@@ -363,7 +379,7 @@ form {
     animation-duration: 3s;
     column-count: 3;
     padding-left: 8rem;
-    padding-top: 3rem;
+    padding-top: 0;
 }
 #displaying_words_testimonial {
     overflow: hidden;
@@ -383,6 +399,9 @@ form {
 #testimonial_name {
     font-weight: bolder;
 }
+
+
+
 
 
 
@@ -409,7 +428,7 @@ form {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 8rem;
+    padding-top: 6rem;
 }
 #links_display {
     opacity: 0;
@@ -431,6 +450,3 @@ form {
     background-color: white;
     color: black;
 }
-
-
-

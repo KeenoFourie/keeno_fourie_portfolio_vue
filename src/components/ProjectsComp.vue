@@ -1,4 +1,5 @@
 <template>
+    <h3 id="heading_contact_us">PROJECTS:</h3>
     <div id="projects_page">
         <div v-for="projects in projects" :key="projects.id" class="card text-bg-dark" id="projects_card_styling">
             <img :src="projects.image" class="card-img" :alt="projects.name">

@@ -1,4 +1,5 @@
 <template>
+    <h3 id="heading_contact_us">RESUME:</h3>
     <div id="resume_page_styling">
           <div id="my_details" v-for="detail in details" :key="detail.id" class="card_styling">
             <p id="the_headings">DETAILS:</p>
