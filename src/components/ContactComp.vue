@@ -2,7 +2,7 @@
   <h3 id="heading_contact_us">CONTACT US:</h3>
     <div id="everything_in_contact">
         <div id="contact_content">
-            <form class="col-5">
+            <form class="">
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Name:</label>
                   <input type="name" aria-describedby="nameHelp" placeholder="Please Insert Name..." style="color: white" required>
@@ -25,7 +25,7 @@
                 <button type="submit" class="btn btn-transparent" id="submit_button">Submit</button>
               </form>
               <div class="col-5" id="contact_details">
-                <p>Contact me:</p>
+                <p id="contact_name">Contact me:</p>
                 <p><i class="fa-solid fa-phone fa-shake"></i> +27 81 747 1270</p>
                 <p><i class="fa-solid fa-envelope fa-shake"></i> keenofourie614@gmail.com</p>
               </div>

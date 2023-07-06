@@ -39,7 +39,7 @@
                 <div id="tech" v-for="technical_skill in technical_skills" :key="technical_skill.id" class="card_styling">
                     <p class="col-3">{{ technical_skill.content }}</p>
                     <p class="col-3"><i :class="technical_skill.content_icons"></i></p>
-                    <p class="col-3">{{ technical_skill.content_progress }}</p>
+                    <p class="col-3" id="progress">{{ technical_skill.content_progress }}</p>
                 </div>
             </div>
       </div>
