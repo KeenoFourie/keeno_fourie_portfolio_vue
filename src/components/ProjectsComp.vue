@@ -2,7 +2,7 @@
     <h3 id="heading_contact_us">PROJECTS:</h3>
     <div id="projects_page">
         <div v-for="projects in projects" :key="projects.id" class="card text-bg-dark" id="projects_card_styling">
-            <img :src="projects.image" class="card-img" :alt="projects.name">
+            <img id="making_project_cards_bw" :src="projects.image" class="card-img" :alt="projects.name">
             <div class="card-img-overlay" id="links_display">
               <h5 class="card-title">{{ projects.name }}</h5>
                 <a :href="projects.netlify_link" target="_blank" id="button_projects_styling">GO LIVE</a>
