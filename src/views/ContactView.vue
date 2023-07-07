@@ -1,6 +1,6 @@
 <template>
     <div id="contact_background">
-      <h3 id="heading_contact_us">CONTACT US:</h3>
+      <h3 id="heading_contact_us"></h3>
     <div id="everything_in_contact">
         <div id="contact_content">
             <form action="https://formspree.io/f/mnqkqnvz" method="POST">
